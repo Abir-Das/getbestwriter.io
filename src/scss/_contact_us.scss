@@ -1,0 +1,118 @@
+//==================== Copy Right Section ==============
+.copyright
+{
+	color: #6d6d6d;
+	font-weight: 500;
+}
+//================= End Copy Right Section ==============
+
+//==================== discussion section ===============
+.discussion
+{
+	.call-us-on
+	{
+		font-family:  'Montserrat', sans-serif;
+		color: #444444;
+		margin: 0px;
+    	font-size: 0.7em;
+    	font-weight: 550;
+	}
+	.contact-us-phone-number
+	{
+		font-family:  'Montserrat', sans-serif;
+		color: #444444;
+	}
+
+	.mail-us-on
+	{
+		font-family:  'Montserrat', sans-serif;
+		color: #444444;
+		margin: 0px;
+    	font-size: 0.7em;
+    	font-weight: 550;
+	}
+
+	.contact-us-mail
+	{
+		font-family:  'Montserrat', sans-serif;
+		color: #444444;
+	}
+	.contact-us-location
+	{
+		font-family:  'Montserrat', sans-serif;
+		color: #444444;
+		margin: 0px;
+    	font-size: 0.7em;
+    	font-weight: 550;
+	}
+	.contact-us-address
+	{
+		font-family:  'Montserrat', sans-serif;
+		color: #444444;
+	}
+	.discuss-heading
+	{
+		font-family:  'Returned', serif;
+		font-size: 4em;
+	}
+	.discuss-sub
+	{
+		color: #848484;
+		font-family:  'Montserrat', sans-serif;
+	}
+	.im-interested
+	{
+		font-family:  'Montserrat', sans-serif;
+		font-size: 1em;
+		font-weight: 600;
+		
+	}
+	.additional-question
+	{
+		font-family:  'Montserrat', sans-serif;
+		font-size: 1em;
+		font-weight: 600;
+		padding-top: 1rem;
+		padding-bottom: 0rem;
+		color: #3b3b3b;
+	}
+	.submit-now
+	{
+		padding: 10px 50px 10px 50px;
+		border-radius: 30px;
+		background-color:#20a4dd;
+		color: white;
+		user-select: none;
+		text-align: center;
+		cursor: pointer;
+		outline: none;
+		transition:transform .15s ease-in-out
+	}
+	.submit-now:hover
+	{
+		color: white;
+		text-decoration: none;
+	    transform: scale(1.1);
+	}
+	.option-lable
+	{
+		color: #747474;
+	}
+	.form-check-input:checked
+	{
+		background-color: #7f7f7f;
+		border-color: #ffffff;
+	}
+	.discuss-form-input-box
+	{
+		width: 100%;
+	    padding-bottom: 10px;
+	    padding-top: 10px;
+	    border-radius: 0px;
+	}
+	.discuss-textarea
+	{
+		border-radius: 0px;
+	}
+} 
+//================= End discussion section ============== 	

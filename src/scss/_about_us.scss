@@ -1,0 +1,284 @@
+//==================== Banner Section ================
+.navbar
+{
+	width: 	100%;
+	position: fixed;
+	background: transparent;
+	z-index: 1000;
+	transition: all 0.5s linear;
+}
+.fixed-top.scrolling
+{
+	background:white;
+	box-shadow: 0 3px 8px #00000038;
+	color:black;
+	.logo-white
+	{
+		display: none;
+	}
+	.logo-black
+	{
+		display: block !important;
+	}
+	.nav-link{
+
+		color:#252525 !important;
+	}
+}
+.navbar-brand
+{
+	padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-right: 0rem; 
+    white-space: nowrap;
+}
+
+.brand-icon
+{
+	height: 80%;
+	width: 80%;
+}
+.nav-link
+{
+	color: white;
+}
+.nav-link:hover
+{
+	color: #000000;
+}
+
+.banner-left
+{
+	background-color:#20a4dd;
+	clip-path: polygon(0% 100%, 100% 100%, 0% -500%);
+
+}
+.banner-row
+{
+	overflow: hidden;
+}
+.banner-right-image
+{
+	width: 130%;
+    transform: translateX(-20%);
+}
+.banner-right
+{
+	position: relative;
+    z-index: -1;
+}
+
+// .banner-right
+// {
+// 	background-image: url('../img/banner_right.jpg');
+// 	width: 100%;
+// 	height: 100%;
+// }
+
+.banner-btn
+{
+	padding: 10px 50px 10px 50px;
+	border-radius: 30px;
+	border-color: white;
+	color: white;
+	user-select: none;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	transition:transform .15s ease-in-out
+}
+
+.banner-btn:hover
+{
+	color: #20a4dd;
+	background-color:white;
+	text-decoration: none;
+    transform: scale(1.2);
+}
+.bannner-welcome
+{
+	margin-top: 10rem;
+    margin-bottom: -3rem;
+    font-size: 5em;
+    font-family:  'Returned', serif;
+
+}
+.about-us-header
+{
+	margin-top: 10rem;
+	font-family:  'Montserrat', sans-serif;
+	font-size: 3em;
+	font-weight: 800;
+}
+.ghost-writing-sub-heading
+{
+	font-family:  'Montserrat', sans-serif;
+}
+//================= End Banner Section ===============
+
+.bread-crumb
+{
+	border-bottom: 1px solid #c2c2c2;
+	position: relative;
+
+	&::after
+	{
+		content: "";
+		width: 100%;
+		height: 2px;
+		background-color: #c2c2c2;
+		position: absolute;
+		left: 0;
+		top: calc(100% + 5px) 
+	}
+}
+// =================== Second Section ================
+	.second-section
+	{
+		.heading
+		{
+			font-size: 3.8em;
+			font-family:  'Returned', serif;
+		}
+		.text
+		{
+			font-family:  'Montserrat', sans-serif;
+			font-size: 0.9em;
+			color: #565656;
+		}
+
+	}
+// =================== End Second Section ============
+//==================== Section Three =================
+.third-section
+{
+	.heading
+	{
+		font-size: 3.8em;
+		font-family:  'Returned', serif;
+	}
+	.text
+	{
+		font-family:  'Montserrat', sans-serif;
+		font-size: 0.9em;
+		color: #565656;
+	}
+	img
+	{
+		margin-bottom: -20%;
+    	position: relative;
+    	z-index: 3;
+	}
+}
+//==================== section Four  =================
+.blue
+{
+	background-image: url('../img/blue-lagoon.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	height: 100%;
+
+	.blue-heading
+	{
+		font-size: 3.8em;
+		font-family:  'Returned', serif;
+		color:#ffffff;
+	}
+	.blue-text
+	{
+		font-family:  'Montserrat', sans-serif;
+		font-size: 0.8em;
+		color: #ffffff;
+	}
+	.blue-contact-us
+	{
+		padding: 10px 50px 10px 50px;
+		border-radius: 30px;
+		border-color: white;
+		color: white;
+		user-select: none;
+		text-align: center;
+		cursor: pointer;
+		outline: none;
+		transition:transform .15s ease-in-out
+	}
+
+
+	.blue-contact-us:hover
+	{
+		color: #20a4dd;
+		background-color:white;
+		text-decoration: none;
+	    transform: scale(1.2);
+	}
+
+}
+.blue-img
+{
+	background-image: url('../img/about_87897.jpg');
+	width: 33%;
+    height: 30vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 8.33%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+//================== End section Four ================
+//==================== Section Five ==================
+.black-card 
+{
+	background: #000000;
+	font-family:  'Montserrat', sans-serif; 
+	margin-top: 25%;
+	padding-bottom: 10%;
+	padding-top: 10%;
+	margin-right: -40%;
+	.heading
+	{
+		color:#ffffff;
+		font-family:  'Montserrat', sans-serif;
+		font-size: 2em;
+		font-weight: 600;
+	}
+	.text
+	{
+		color: #ffffff;
+		font-family:  'Montserrat', sans-serif;
+		font-size: 1em;
+		color: #7d7d7d;
+	}
+}
+//================= End Section Five ==================
+// //==================== Contact Section ===============
+.contact-section-head
+{
+	font-weight: bold;
+	font-size: 1em;
+	font-family:  'Montserrat', sans-serif;
+}
+
+.contact-section-text
+{
+	font-size: 0.8em;
+	color: #565656;
+	font-weight: 500;
+	font-family:  'Montserrat', sans-serif;
+}
+
+.s-m-icon
+{
+	color:#adb5bd;
+}
+//================== End Contact Section =============
+
+//====================Copy Right Section==============
+.copyright
+{
+	color: #6d6d6d;
+	font-weight: 500;
+}
+//=================End Copy Right Section==============

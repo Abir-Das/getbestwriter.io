@@ -1,0 +1,390 @@
+
+//--------------Banner Section ----------------------------
+// .header-navbar
+// {
+// 	margin-bottom: -5rem;
+// }
+.navbar
+{
+	width: 	100%;
+	position: fixed;
+	background: transparent;
+	z-index: 1000;
+	transition: all 0.5s linear;
+}
+.fixed-top.scrolling
+{
+	background:white;
+	box-shadow: 0 3px 8px #00000038;
+	color:black;
+	.logo-white
+	{
+		display: none;
+	}
+	.logo-black
+	{
+		display: block !important;
+	}
+	.nav-link{
+
+		color:#252525 !important;
+	}
+}
+.navbar-brand
+{
+	padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-right: 0rem; 
+    white-space: nowrap;
+}
+
+.brand-icon
+{
+	height: 80%;
+	width: 80%;
+}
+.nav-link
+{
+	color: white;
+}
+.nav-link:hover
+{
+	color: #000000;
+}
+
+.banner-left
+{
+	background-color:#20a4dd;
+	clip-path: polygon(0% 100%, 100% 100%, 0% -500%);
+
+}
+.banner-row
+{
+	overflow: hidden;
+}
+.banner-right-image
+{
+	width: 130%;
+    transform: translateX(-20%);
+}
+.banner-right
+{
+	position: relative;
+    z-index: -1;
+}
+
+// .banner-right
+// {
+// 	background-image: url('../img/banner_right.jpg');
+// 	width: 100%;
+// 	height: 100%;
+// }
+
+.banner-btn
+{
+	padding: 10px 50px 10px 50px;
+	border-radius: 30px;
+	border-color: white;
+	color: white;
+	user-select: none;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	transition:transform .15s ease-in-out
+}
+
+.banner-btn:hover
+{
+	color: #20a4dd;
+	background-color:white;
+	text-decoration: none;
+    transform: scale(1.2);
+}
+.bannner-welcome
+{
+	margin-top: 10rem;
+    margin-bottom: -3rem;
+    font-size: 5em;
+    font-family:  'Returned', serif;
+
+}
+.ghost-writer
+{
+	font-family:  'Montserrat', sans-serif;
+	font-size: 3em;
+	font-weight: 800;
+}
+.ghost-writing-sub-heading
+{
+	font-family:  'Montserrat', sans-serif;
+}
+
+// ----------------------------------End banner section--------------------------
+
+//feature section
+.feature-type
+{
+	font-weight: bold;
+	color: #2f3439;
+	font-size: 1.3em;
+	text-align: center;
+	font-family:  'Montserrat', sans-serif;
+}
+
+.feature-description
+{
+	text-align: center;
+	font-size: 1em;
+	color: #2f3439;
+	font-weight: 500;
+}
+
+.feature-btn
+{
+	padding: 10px 50px 10px 50px;
+	border-radius: 30px;
+	background-color:#20a4dd;
+	color: white;
+	user-select: none;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	transition:transform .15s ease-in-out
+}
+
+.feature-btn:hover
+{
+	color: white;
+	text-decoration: none;
+    transform: scale(1.2);
+}
+// ------------------------About Us Section-----------------
+.about-us-left-heading
+{
+	font-size: 4em;
+	font-family:  'Returned', serif;
+}
+.about-us-text
+{
+	color: #797979;
+	font-family:  'Montserrat', sans-serif;
+}
+.about-us-hr
+{
+	border: 2px solid #20a4dd;
+	opacity: 1;
+}
+.feature-card-text
+{
+	font-family:  'Montserrat', sans-serif;
+
+}
+// ------------------------About Us Section-----------------
+// ------------------------card section---------------------
+.card-section-heading
+{
+	text-align: center;
+	font-size: 3em;
+	font-family:  'Returned', serif;
+}
+.card-section-card-title
+{
+	font-family:  'Returned', serif;
+	font-size: 2em;
+}
+.card-section-card-body
+{
+	border: none;
+	cursor: pointer;
+	transition: background-color .15s ease-in-out
+}
+.card-section-card-body:hover
+{
+	background-color: #20a4dd;
+	color: white;
+}
+// ------------------------end card section---------------------
+
+//-------------------------Why Choose Us Section------------
+.why-choose-us-heading
+{
+	text-align: center;
+	font-size:4em;
+	font-family:  'Returned', serif;
+}
+.why-choose-us-left-heading
+{
+	font-size: 3em;
+	font-family:  'Returned', serif;
+}
+.why-choose-us-hr
+{
+	border: 2px solid #20a4dd;
+	opacity: 1;
+}
+.why-choose-us-list
+{
+	color: #6f6f6f;
+	display: inline-block;
+	font-family:  'Montserrat', sans-serif;
+	font-size: 0.9em;
+}
+//------------------------- End Why Choose Us Section ------------
+
+//------------------------- contact form -------------------------
+
+.contact-form-section
+{
+	background-image: url('../img/paralax.jpg');
+	color: white;
+	background-attachment: fixed;
+}
+.contact-form-address-header
+{
+	font-size: 3em;
+	font-family:  'Returned', serif;
+
+}
+.contact-form-heading
+{
+	font-size: 3em;
+	font-family:  'Returned', serif;
+	// font-family:  'Montserrat', sans-serif;
+}
+.contact-info
+{
+	font-family:  'Montserrat', sans-serif;
+}
+.contact-form-sub-heading
+{
+	font-family:  'Montserrat', sans-serif;
+}
+.contact-form-name
+{
+	background: transparent;
+}
+.contact-form-email
+{
+	background: transparent;
+}
+.contact-form-phone
+{
+	background: transparent;
+}
+.contact-form-subject
+{
+	background: transparent;
+
+}
+.contact-form-message
+{
+	background: transparent;
+}
+.submit-information
+{
+	padding: 10px 50px 10px 50px;
+	border-radius: 30px;
+	background-color:#20a4dd;
+	color: white;
+	user-select: none;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	transition:transform .15s ease-in-out
+}
+.submit-information:hover
+{
+	background-color: #20a4dd;
+	color: white;
+	transform: scale(1.03);
+}
+
+//------------------------- contact form -------------------------
+
+
+//--------------------------recent blog--------------------------
+.recent-blog
+{
+	background-color: #f6f8fa;
+}
+
+.recent-blog-heading
+{
+	font-size: 4em;
+	font-family:  'Returned', serif;
+}
+
+.posted-by
+{
+	color: #989898;
+	font-size: 0.8em;
+	margin-top: 8px;
+}
+
+.posted-on
+{
+	color: #989898;
+	font-size: 0.8em;
+	margin-top: 8px;
+}
+.admin
+{
+	color: #424141;
+}
+.blog-hr
+{
+	margin: 0px;
+}
+.recent-blog-card-title
+{
+	font-size: 1em;
+	color: #1c1c1c;
+    text-decoration: none;
+    font-weight: bold;
+    font-family:  'Montserrat', sans-serif;
+}
+.card-text
+{
+	font-family:  'Montserrat', sans-serif;
+}
+.blog-card-body
+{
+	padding-top: 1rem;
+	cursor: pointer;
+}
+//----------------------------------end recent blog-------------------
+
+//----------------------------------contact section--------------------
+
+.contact-section-head
+{
+	font-weight: bold;
+	font-size: 1em;
+	font-family:  'Montserrat', sans-serif;
+}
+
+.contact-section-text
+{
+	font-size: 0.8em;
+	color: #565656;
+	font-weight: 500;
+	font-family:  'Montserrat', sans-serif;
+}
+
+.s-m-icon
+{
+	color:#adb5bd;
+}
+//--------------------------------------end contact section-----------------------------
+
+//copyright
+
+.copyright
+{
+	color: #6d6d6d;
+	font-weight: 500;
+}
+
+
+
+
