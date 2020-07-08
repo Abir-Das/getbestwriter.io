@@ -1,9 +1,5 @@
 
 //--------------Banner Section ----------------------------
-// .header-navbar
-// {
-// 	margin-bottom: -5rem;
-// }
 .navbar
 {
 	width: 	100%;
@@ -385,6 +381,31 @@
 	font-weight: 500;
 }
 
+//========================== end copyright section ========================
 
+//========================== mobile media query section ====================
+@media(max-width: 760px)
+{
+	.about-us-left-heading
+	{
+		text-align: center;
+		font-size: 4em;
+	}
+	.about-us-hr
+	{
+		border: 2px solid #20a4dd;
+		opacity: 1;
+		margin-left: 35%;
+	}
+	.about-us-text
+	{
+		font-size: 0.9em;
+	}
+	.card-section-heading
+	{
+		font-size: 2em;
+	}
+}  
+//======================= end mobile media query section =================== 
 
 
