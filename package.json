@@ -36,6 +36,7 @@
   ],
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
+    "alpinejs": "^2.4.1",
     "bootstrap": "^5.0.0-alpha1",
     "popper.js": "^1.16.1"
   }

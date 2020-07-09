@@ -1,4 +1,4 @@
 import "../scss/app.scss";
 
-import * as bootstrap from "bootstrap";
+import 'alpinejs'
 require('./common.js');

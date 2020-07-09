@@ -7,39 +7,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 </head>
-<body>
-		<!--navbar section -->
-	<header class="header-navbar">
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" role="navigation">
-			<div class="container-fluid">
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
+<body x-data="{responsiveMenuOpen: 0}" :class="{'responsive-menu-open': responsiveMenuOpen === 1}">
 
-			  <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo01">
-				<a class="navbar-brand" href="#" class="brand-logo">
-					<img src="./src/img/icon-white.png" alt="" class="logo-white">
-					<img src="./src/img/icon-black.png" alt="" class="logo-black d-none">
-				</a>
-				<ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-				  <li class="nav-item">
-					<a class="nav-link text-white" aria-current="page" href="#">ABOUT US</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link text-white" aria-current="page" href="#">WHY CHOOSE US</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link text-white" aria-current="page" href="#">CONTACT US</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link text-white" aria-current="page" href="#">FEATURED US</a>
-				  </li>
-				</ul>
-			  </div>
+	<!-- Menu Section -->
+	<header class="page-header">
+		<div class="container-lg">
+			<div class="col-12 header-container">
+				<div class="brand-logo">
+					<img src="./src/img/icon-white.png" alt="" class="white-logo">
+					<img src="./src/img/icon-black.png" alt="" class="black-logo d-none">
+				</div>
+				<div class="menu-header-container">
+					<ul>
+						<li><a href="./about_us.html">ABOUT US</a></li>
+						<li><a href="">WHY CHOOSE US</a></li>
+						<li><a href="./contact_us.html">CONTACT US</a></li>
+						<li><a href="">FEATURE US</a></li>
+					</ul>
+				</div>
+				<button class="responsive-btn d-md-none" @click="{responsiveMenuOpen = 1}">
+					<i class="fas fa-bars"></i>
+				</button>
 			</div>
-		  </nav>
+		</div>
 	</header>
-	<!--end navbar section -->
+	<!-- End Menu Section -->
 
 	<!-- bannder section  -->
 	<div class="">
@@ -59,7 +51,7 @@
 	<section class="bread-crumb">
 		<div class="container">
 			<div class="row py-2">
-				<div class="col-md-12">
+				<div class="col-12 col-md-12">
 					<p class="bead-crumb m-0 text-secondary">HOME | BLOG</p>	
 				</div>
 			</div>
@@ -72,8 +64,8 @@
 		<div class="container">
 			<p class="recent-blog-heading mb-5 text-center">Recent Blog</p>
 			<div class="row justify-content-center">
-				<div class="col-md-12 row">
-					<div class="blog-box col-md-4">
+				<div class="col-12 col-md-12 row">
+					<div class="blog-box col-12 col-md-4">
 						<div class="">
 						  <img src="./src/img/blog1.jpg" class="card-img-top" alt="...">
 						  <div class="blog-card-body">
@@ -88,7 +80,7 @@
 						  </div>
 						</div>
 					</div>
-					<div class="blog-box col-md-4">
+					<div class="blog-box col-12 col-md-4">
 						<div class="">
 						  <img src="./src/img/blog2.jpg" class="card-img-top" alt="...">
 						  <div class="blog-card-body">
@@ -103,7 +95,7 @@
 						  </div>
 						</div>
 					</div>
-					<div class="blog-box col-md-4">
+					<div class="blog-box col-12 col-md-4">
 						<div class="">
 						  <img src="./src/img/blog3.jpg" class="card-img-top" alt="...">
 						  <div class="blog-card-body">
@@ -119,7 +111,7 @@
 						</div>
 					</div>
 				
-					<div class="blog-box col-md-4">
+					<div class="blog-box col-12 col-md-4">
 						<div class="">
 						  <img src="./src/img/blog1.jpg" class="card-img-top" alt="...">
 						  <div class="blog-card-body">
@@ -134,7 +126,7 @@
 						  </div>
 						</div>
 					</div>
-					<div class="blog-box col-md-4">
+					<div class="blog-box col-12 col-md-4">
 						<div class="">
 						  <img src="./src/img/blog2.jpg" class="card-img-top" alt="...">
 						  <div class="blog-card-body">
@@ -149,7 +141,7 @@
 						  </div>
 						</div>
 					</div>
-					<div class="blog-box col-md-4">
+					<div class="blog-box col-12 col-md-4">
 						<div class="">
 						  <img src="./src/img/blog3.jpg" class="card-img-top" alt="...">
 						  <div class="blog-card-body">
@@ -174,8 +166,8 @@
 	<section class="contact-section mb-5 mt-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2">
-					<img src="./src/img/icon.png" alt="">
+				<div class="col-12 order-4 order-md-1 col-md-2">
+					<img src="./src/img/icon.png" alt="" class="icon-buttom">
 					<div class=" text-center pt-3">
 						<a href="#"><i class="fab fa-google-plus-square s-m-icon fa-2x"></i></a>
 						<a href="#"><i class="fab fa-facebook-square s-m-icon fa-2x"></i></a>
@@ -183,15 +175,15 @@
 						<a href="#"><i class="fab fa-linkedin s-m-icon fa-2x"></i></a>
 					</div>
 				</div>
-				<div class="col-md-4 offset-md-1">
+				<div class="col-12 order-1 order-md-2 col-md-4 offset-md-1">
 					<p class="contact-section-head">SERVICES AND PRICING</p>
 					<p class="contact-section-text">Ghostwriting / Co-Writing Non-Fiction <br>Fiction Book Co-Writing / Ghostwriting <br>Children’s Book Co-Writing / Ghostwriting <br>Editing and Enhancement of Manuscript <br>Web Content Copywriting</p>
 				</div>   
-				<div class="col-md-3">
+				<div class="col-12 order-2 order-md-3 col-md-3">
 					<br>
 					<p class="contact-section-text"><br>Article Writing, Blog Writing<br>Content development for Marketing<br>Email Newsletter Content Writing<br>Screenplay Writing, Film Scripting<br>Cartoon Series Script Writing</p>
 				</div>
-				<div class="col-md-2">
+				<div class="col-12 order-3 order-md-4 col-md-2">
 					<p class="contact-section-head">USEFUL LINKS</p>
 					<p class="contact-section-text">About Us<br>Why Choose Us<br>Contact Us<br>Featured Services</p>
 				</div>
@@ -209,7 +201,21 @@
 		</div>
 	</section>
 	<!-- end footer ribbon section -->
-
+	
+	<!-- resonsive side menu -->
+	<div class="responsive-menu d-md-none" :class="{'is_open': responsiveMenuOpen === 1}">
+		<div class="top">
+			<button class="close-btn" @click="{responsiveMenuOpen = 0}"><i class="fas fa-times fa-2x"></i></button>
+		</div>
+			<div class="menu-header-container">
+				<ul>
+					<li><a href="">ABOUT US</a></li>
+					<li><a href="">WHY CHOOSE US</a></li>
+					<li><a href="">CONTACT US</a></li>
+					<li><a href="">FEATURE US</a></li>
+				</ul>
+			</div>
+	<!-- end resonsive side menu -->
 	<script src="./dist/js/app.js"></script>
 </body>
 </html>

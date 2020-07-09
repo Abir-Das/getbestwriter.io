@@ -122,6 +122,48 @@
 //=================== mobile media query section ========
 @media(max-width: 760px)
 {
-		
+	.contact-us-icon
+	{
+		display: flex;
+		margin:0 auto;
+	}
+	.contact-us-location
+	{
+		text-align: center;
+	}
+	.contact-us-address
+	{
+		text-align: center;
+	}
+	.mail-us-on
+	{
+		text-align: center;
+	}
+	.contact-us-mail
+	{
+		text-align: center;
+	}
+	.call-us-on
+	{
+		text-align: center;
+	}
+	.contact-us-phone-number
+	{
+		text-align: center;
+	}
+	.submit-now
+	{
+
+	}
+	.discussion .discuss-heading
+	{
+		font-size: 3em;
+	}
+	.banner-left
+	{
+		padding-bottom: 10%;
+		clip-path:none !important;
+	}
+
 }  
 //================ end mobile media query section ========

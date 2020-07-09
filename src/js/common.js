@@ -1,7 +1,7 @@
 //------------------navbar js----------------------
 window.addEventListener('scroll', _ => {
 	const scroll = window.scrollY
-	const fixedTop = document.querySelector('.fixed-top');
+	const fixedTop = document.querySelector('.page-header');
 
 	if(scroll < 200) {
 		fixedTop.classList.remove('scrolling')

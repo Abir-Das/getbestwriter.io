@@ -1,3 +1,113 @@
+// ============= customise nav bar =======================
+.page-header
+{
+	position: absolute;
+	width: 100%;
+	position: fixed;
+    z-index: 1000;
+    background:transparent;
+    transition: all 0.3s ease-in-out;
+
+	.header-container
+	{
+		padding: 10px 5%;
+		align-items: center;
+		position: relative;
+		display: flex;
+		justify-content: center;
+
+		.responsive-btn
+		{
+			position: absolute;
+		    top: 0; 
+		    right: 0;
+		    padding: 10px;
+		    font-size: 2.5rem;
+		    background: none;
+		    border: none;
+		    outline: none;
+		    color: #fff;
+
+		}		
+		@media(min-width: 992px)
+		{
+			display: grid;
+		    grid-template-columns: 1fr 4fr;
+		    justify-content: flex-start;
+
+		}
+
+		.menu-header-container
+		{
+			display: none;
+
+			@media(min-width: 992px)
+			{
+				display: block;
+			}
+			ul
+			{
+				display: flex;
+				justify-content: flex-end;
+				list-style-type: none;
+				margin: 0;
+				align-items: center;
+			}
+			li
+			{
+				a 
+				{
+					color: #fff;
+					text-decoration: none;
+				}
+				color: #ffffff;
+				padding: 0 1rem;
+			}
+		}
+		
+	}
+	
+	&.scrolling
+    {
+    	background: #ffffff;
+    	box-shadow: 0 3px 8px #00000038;
+
+    	.header-container
+    	{
+    		padding: 5px 5%;
+
+    		.brand-logo
+    		{
+    			.white-logo
+    			{
+    				display:none; 
+    			}
+    			.black-logo
+    			{
+					display: block !important;
+    			}
+    		}
+			
+			ul
+			{
+				li
+				{
+					a 
+					{
+						color: #222;
+						text-decoration: none;
+					}
+					color: #222;
+				}
+			}
+			.responsive-btn
+			{
+				color: #222;
+			}
+
+    	}
+    }
+}
 
 //--------------Banner Section ----------------------------
 .navbar
@@ -19,7 +129,7 @@
 	}
 	.logo-black
 	{
-		display: block !important;
+		display: inline-block !important;
 	}
 	.nav-link{
 
@@ -60,6 +170,11 @@
 }
 .banner-right-image
 {
+	background-image: url('../img/home_page_banner.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 100%;
 	width: 130%;
     transform: translateX(-20%);
 }
@@ -69,12 +184,6 @@
     z-index: -1;
 }
 
-// .banner-right
-// {
-// 	background-image: url('../img/banner_right.jpg');
-// 	width: 100%;
-// 	height: 100%;
-// }
 
 .banner-btn
 {
@@ -86,6 +195,7 @@
 	text-align: center;
 	cursor: pointer;
 	outline: none;
+	margin-bottom: 20px;
 	transition:transform .15s ease-in-out
 }
 
@@ -383,6 +493,10 @@
 
 //========================== end copyright section ========================
 
+	.fixed-top.scrolling .logo-black
+	{
+		display: inline-block !important;
+	}
 //========================== mobile media query section ====================
 @media(max-width: 760px)
 {
@@ -405,7 +519,91 @@
 	{
 		font-size: 2em;
 	}
+	.why-choose-us-heading
+	{
+		font-size: 3.5em;
+	}
+	.why-choose-us-left-heading
+	{
+		font-size: 2em;
+	}
+	.why-choose-us-img
+	{
+		margin-bottom: 2rem;
+	}
+	.contact-section-head
+	{
+		text-align: center;
+	}
+	.contact-section-text
+	{
+		text-align: center;
+	}
+	.icon-buttom
+	{
+		display: flex;
+		margin: 0 auto; 
+	}
+	.banner-left
+	{
+		padding-bottom: 10%;
+		clip-path:none !important;
+	}
+	.ghost-writer
+	{
+		font-size: 2em;
+	}
+	.bannner-welcome
+	{
+		font-size: 1em;
+	}
+	.ghost-writing-sub-heading
+	{
+		font-size: 0.7em;
+	}
+
+	.fixed-top.scrolling
+	{
+		background:white;
+		box-shadow: 0 3px 8px #00000038;
+		color:black;
+		.logo-white
+		{
+			display: none;
+		}
+		.logo-black
+		{
+			display: inline-block !important;
+		}
+		.nav-link
+		{
+			color:#252525 !important;
+		}
+	}
+	.nav-link
+	{
+		background: #ffffff;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+		color: #030303;
+
+	}
+	.navbar-collapse
+	{
+
+	}
+	.nav-link:hover
+	{
+
+	}
+	.nav-con
+	{
+		background: transparent;
+		width: 100%;
+	}
+
 }  
 //======================= end mobile media query section =================== 
-
-

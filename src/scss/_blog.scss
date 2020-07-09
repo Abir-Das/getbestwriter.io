@@ -9,6 +9,10 @@
 //============ mobile media query section ============
 @media(max-width: 760px)
 {
-	
+	.banner-left
+	{
+		padding-bottom: 10%;
+		clip-path:none !important;
+	}
 }  
 //========== end mobile media query section =========== 

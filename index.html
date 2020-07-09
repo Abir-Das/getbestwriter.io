@@ -7,40 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 </head>
-<body>
-
-	<!--navbar section -->
-	<header class="header-navbar">
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" role="navigation">
-			<div class="container-fluid">
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-
-			  <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo01">
-				<a class="navbar-brand" href="#" class="brand-logo">
-					<img src="./src/img/icon-white.png" alt="" class="logo-white">
-					<img src="./src/img/icon-black.png" alt="" class="logo-black d-none">
-				</a>
-				<ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-				  <li class="nav-item">
-					<a class="nav-link text-white" aria-current="page" href="#">ABOUT US</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link text-white" aria-current="page" href="#">WHY CHOOSE US</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link text-white" aria-current="page" href="#">CONTACT US</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link text-white" aria-current="page" href="#">FEATURED US</a>
-				  </li>
-				</ul>
-			  </div>
+<body x-data="{responsiveMenuOpen: 0}" :class="{'responsive-menu-open': responsiveMenuOpen === 1}">
+	
+	<!-- Menu Section -->
+	<header class="page-header">
+		<div class="container-lg">
+			<div class="col-12 header-container">
+				<div class="brand-logo">
+					<img src="./src/img/icon-white.png" alt="" class="white-logo">
+					<img src="./src/img/icon-black.png" alt="" class="black-logo d-none">
+				</div>
+				<div class="menu-header-container">
+					<ul>
+						<li><a href="./about_us.html">ABOUT US</a></li>
+						<li><a href="">WHY CHOOSE US</a></li>
+						<li><a href="./contact_us.html">CONTACT US</a></li>
+						<li><a href="">FEATURE US</a></li>
+					</ul>
+				</div>
+				<button class="responsive-btn d-md-none" @click="{responsiveMenuOpen = 1}">
+					<i class="fas fa-bars"></i>
+				</button>
 			</div>
-		  </nav>
+		</div>
 	</header>
-	<!--end navbar section -->
+	<!-- End Menu Section -->
 
 	<!-- bannder section  -->
 	<div class="">
@@ -52,8 +43,8 @@
 				<p class="ghost-writing-sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit <br> sed do eiusmod</p>
 				<a href="#" class="banner-btn btn">CONTACT US</a>
 			</div>
-			<div class="banner-right col-12 col-md-6 col-lg-6">
-				<img src="./src/img/home_page_banner.jpg" alt="" class="banner-right-image">
+			<div class="banner-right  col-12 col-md-6 col-lg-6">
+				<div class="banner-right-image"></div>
 			</div>
 		</div>
 	</div>
@@ -143,7 +134,7 @@
 			<div class="container">
 				<p class="why-choose-us-heading mb-5">Why Choose Us</p>
 				<div class="row">
-					<div class="col-12 col-md-6">
+					<div class="col-12 order-2 col-md-6">
 						<p class="why-choose-us-left-heading">Why GetBestWriters.com</p>
 						
 						<hr class="why-choose-us-hr w-25">
@@ -159,7 +150,7 @@
 						
 						<p class="why-choose-us-list"><i class="fas fa-arrow-right"></i> &nbsp; Our competitive rates are genuinely cost-effective.</p>
 					</div>
-					<div class="col-12 col-md-5 offset-md-1">
+					<div class="why-choose-us-img col-12 order-1 col-md-5 offset-md-1">
 						<img src="./src/img/getbestwriter.jpg" alt="" class="img-fluid">
 					</div>
 				</div>
@@ -276,8 +267,8 @@
 	<section class="contact-section mb-5 mt-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-md-2">
-					<img src="./src/img/icon.png" alt="">
+				<div class="col-12 order-4 order-md-1 col-md-2">
+					<img src="./src/img/icon.png" alt="" class="icon-buttom">
 					<div class=" text-center pt-3">
 						<a href="#"><i class="fab fa-google-plus-square s-m-icon fa-2x"></i></a>
 						<a href="#"><i class="fab fa-facebook-square s-m-icon fa-2x"></i></a>
@@ -285,15 +276,15 @@
 						<a href="#"><i class="fab fa-linkedin s-m-icon fa-2x"></i></a>
 					</div>
 				</div>
-				<div class="col-12 col-md-4 offset-md-1">
+				<div class="col-12 order-1 order-md-2 col-md-4 offset-md-1">
 					<p class="contact-section-head">SERVICES AND PRICING</p>
 					<p class="contact-section-text">Ghostwriting / Co-Writing Non-Fiction <br>Fiction Book Co-Writing / Ghostwriting <br>Children’s Book Co-Writing / Ghostwriting <br>Editing and Enhancement of Manuscript <br>Web Content Copywriting</p>
 				</div>   
-				<div class="col-12 col-md-3">
+				<div class="col-12 order-2 order-md-3 col-md-3">
 					<br>
 					<p class="contact-section-text"><br>Article Writing, Blog Writing<br>Content development for Marketing<br>Email Newsletter Content Writing<br>Screenplay Writing, Film Scripting<br>Cartoon Series Script Writing</p>
 				</div>
-				<div class="col-12 col-md-2">
+				<div class="col-12 order-3 order-md-4 col-md-2">
 					<p class="contact-section-head">USEFUL LINKS</p>
 					<p class="contact-section-text">About Us<br>Why Choose Us<br>Contact Us<br>Featured Services</p>
 				</div>
@@ -311,6 +302,21 @@
 		</div>
 	</section>
 	<!-- end footer ribbon section -->
+	
+	<!-- resonsive side menu -->
+	<div class="responsive-menu d-md-none" :class="{'is_open': responsiveMenuOpen === 1}">
+		<div class="top">
+			<button class="close-btn" @click="{responsiveMenuOpen = 0}"><i class="fas fa-times fa-2x"></i></button>
+		</div>
+			<div class="menu-header-container">
+				<ul>
+					<li><a href="">ABOUT US</a></li>
+					<li><a href="">WHY CHOOSE US</a></li>
+					<li><a href="">CONTACT US</a></li>
+					<li><a href="">FEATURE US</a></li>
+				</ul>
+			</div>
+	<!-- end resonsive side menu -->
 
 	<script src="./dist/js/app.js"></script>
 	<!-- Custom JS for background color on scrolling -->
