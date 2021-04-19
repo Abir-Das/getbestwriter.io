@@ -6,6 +6,19 @@ gsap.registerPlugin(ScrollTrigger)
 
 window.addEventListener('load', ()=>{
 
+    const ghostSubHeader = document.querySelector('.ghost-writing-sub-heading')
+
+    if (ghostSubHeader) {
+
+        const ghostSubHeaderText = ghostSubHeader.textContent
+        ghostSubHeader.textContent = ""
+        new Typed('.ghost-writing-sub-heading', {
+            strings: [ghostSubHeaderText],
+            cursorChar: '',
+            typeSpeed: 80
+        });
+    }
+
     const aboutUsHeader = document.querySelector('.about-us-header')
 
     if (aboutUsHeader) {
