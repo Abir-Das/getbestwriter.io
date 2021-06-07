@@ -1,8 +1,10 @@
 import Typed from 'typed.js';
 import gsap from 'gsap';
 import ScrollTrigger  from 'gsap/ScrollTrigger';
+import { TextPlugin } from 'gsap/TextPlugin'
 
 gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(TextPlugin)
 
 window.addEventListener('load', ()=>{
 
@@ -45,98 +47,6 @@ window.addEventListener('load', ()=>{
         });
     }
 
-    // scroll trigger implementation 
-    
-    const cardHeaders = document.querySelectorAll('.recent-blog-card-title')
-
-    ScrollTrigger.create({
-        trigger:".recent-blog",
-        onEnter:(self)=>{
-            cardHeaders.forEach((cardHeader)=>{
-                const cardHeaderText = cardHeader.textContent
-                cardHeader.textContent = ""
-                new Typed(cardHeader, {
-                    strings: [cardHeaderText],
-                    cursorChar: '',
-                    typeSpeed: 80
-                });
-            })
-        }
-    })
-    
-
-    const blogHeader = document.querySelector('.recent-blog-heading')
-
-    if (blogHeader) {
-
-        ScrollTrigger.create({
-            trigger:".recent-blog",
-            onEnter:(self)=>{
-                const blogHeaderText = blogHeader.textContent
-                blogHeader.textContent = ""
-                new Typed('.recent-blog-heading', {
-                    strings: [blogHeaderText],
-                    cursorChar: '',
-                    typeSpeed: 80
-                });
-            }
-        })
-        
-    }
-
-    const whyChooseUsHeader = document.querySelector('.why-choose-us-left-heading')
-
-    if (whyChooseUsHeader) {
-
-        ScrollTrigger.create({
-            trigger:".fire", 
-            onEnter:(self)=>{
-                const whyChooseUsHeaderText = whyChooseUsHeader.textContent
-                whyChooseUsHeader.textContent = ""
-                new Typed('.why-choose-us-left-heading', {
-                    strings: [whyChooseUsHeaderText],
-                    cursorChar: '',
-                    typeSpeed: 80
-                });
-            }
-        })
-    }
-
-    // form
-    const contactUsHeader = document.querySelector('.contact-form-heading')
-
-    if (contactUsHeader) {
-
-        ScrollTrigger.create({
-            trigger:".why-choose-us",
-            onEnter:(self)=>{
-                const contactUsHeaderText = contactUsHeader.textContent
-                contactUsHeader.textContent = ""
-                new Typed('.contact-form-heading', {
-                    strings: [contactUsHeaderText],
-                    cursorChar: '',
-                    typeSpeed: 80
-                });
-            }
-        })  
-    }
-    const contactInfoHeader = document.querySelector('.contact-form-address-header')
-
-    if (contactInfoHeader) {
-
-        ScrollTrigger.create({
-            trigger:".why-choose-us",
-            onEnter:(self)=>{
-                const contactInfoHeaderText = contactInfoHeader.textContent
-                contactInfoHeader.textContent = ""
-                new Typed('.contact-form-address-header', {
-                    strings: [contactInfoHeaderText],
-                    cursorChar: '',
-                    typeSpeed: 80
-                });
-            }
-        })  
-    }
 
     
 
@@ -173,26 +83,24 @@ window.addEventListener('load', ()=>{
         });
     }
 
-    const aboutHeader = document.querySelector('.about-us-left-heading')
 
-    if (aboutHeader) {
+    // Universal Typing Animation
+    const typingAnimations = document.querySelectorAll('.typing-animation')
+    typingAnimations.forEach((typingAnimation) => {
+        const text = typingAnimation.innerHTML
+        const textLen = typingAnimation.textContent.length
+        const trigger = typingAnimation.dataset.trigger ? typingAnimation.dataset.trigger : typingAnimation;
 
-        ScrollTrigger.create({
-            trigger:"about-us",
-            onEnter:(self)=>{
-                console.log()
-                const aboutHeaderText = aboutHeader.textContent
-                aboutHeader.textContent = ""
-                new Typed('.about-us-left-heading', {
-                    strings: [aboutHeaderText],
-                    cursorChar: '',
-                    typeSpeed: 80
-                });
-            }
+        typingAnimation.textContent = ''
+        gsap.to(typingAnimation, {
+            scrollTrigger: trigger,
+            text: {
+                value: text,
+            },
+            duration: textLen * 0.08,
+            ease: 'none',
         })
-        
-    }
-
+    })
 
         
 })

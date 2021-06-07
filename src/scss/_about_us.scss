@@ -107,8 +107,12 @@
 {
 	margin-top: 10rem;
 	font-family:  'Montserrat', sans-serif;
-	font-size: 3em;
+	font-size: 2em;
 	font-weight: 800;
+
+	@media (min-width: 768px) {
+		font-size: 3em;
+	}
 }
 .ghost-writing-sub-heading
 {

@@ -304,10 +304,16 @@
     border-radius: 14px;
     cursor: pointer;
     transition: background-color 0.15s ease-in-out;
-}
-.card-section-card-body:hover {
-    background-color: #20a4dd;
-    color: white;
+
+    a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+    &:hover {
+        background-color: #20a4dd;
+        color: white;
+    }
 }
 // ------------------------end card section---------------------
 
